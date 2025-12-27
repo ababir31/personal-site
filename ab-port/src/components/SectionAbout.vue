@@ -67,8 +67,18 @@ import IconBrand from '@/components/icons/IconBrand.vue'
             <h3 class="text-[1.444rem] leading-[1.3em] text-blue-50">Organic Strategy</h3>
             <p class="text-slate-200 text-[0.833rem]! leading-[1.6em]!">
               Use technical SEO, content marketing, and repurposing strategies to drive sustainable,
-              long-term growth without paid ads.
+              long-term growth without paid ads. This is something to check github.
             </p>
+          </div>
+          <div class="flex flex-col p-6 border border-blue-500 rounded-lg items-end justify-between">
+            <icon-organic />
+            <div class="flex flex-col gap-4">
+              <h3 class="text-[1.444rem] leading-[1.3em] text-blue-50">Organic Strategy</h3>
+              <p class="text-slate-200 text-[0.833rem]! leading-[1.6em]!">
+                Use technical SEO, content marketing, and repurposing strategies to drive sustainable,
+                long-term growth without paid ads. This is something to check github.
+              </p>
+            </div>
           </div>
         </div>
       </div>
