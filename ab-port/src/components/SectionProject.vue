@@ -50,13 +50,14 @@ onMounted(() => {
     scrollTrigger: {
       trigger: projectsWrapper.value,
       start: 'top top',
-      end: '+=400%',
+      end: '+=500%',
       scrub: true,
       pin: true,
       markers: true, // TEMP – for sanity
     },
   })
 
+  // SECTION 1 ENTER
   tl.from(sectionOneText.value, {
     y: 80,
     opacity: 0,
@@ -77,12 +78,145 @@ onMounted(() => {
     },
     0.15,
   )
+
+  // SECTION 1 EXIT
+  tl.to(sectionOneText.value, {
+    y: -80,
+    opacity: 0,
+    ease: 'none',
+  })
+
+
+  tl.to(
+    sectionOneBg.value,
+    {
+      scale: 1.05,
+      ease: 'none',
+    },
+    '<',
+  )
+
+  // SECTION 2 ENTER
+  tl.to(sectionTwo.value, {
+    opacity: 1,
+    ease: 'none',
+  })
+
+  tl.from(sectionTwoText.value, {
+    y: 80,
+    opacity: 0,
+    ease: 'none',
+  })
+
+  tl.fromTo(
+    sectionTwoBg.value,
+    { scale: 1.2, transformOrigin: '50% 50%' },
+    { scale: 1, ease: 'none' },
+  )
+
+  tl.from(
+    sectionTwoImage.value,
+    {
+      opacity: 0,
+      ease: 'none',
+    },
+    '<0.15',
+  )
+
+  // SECTION 2 EXIT
+  tl.to(sectionTwoText.value, {
+    y: -80,
+    opacity: 0,
+    ease: 'none',
+  })
+
+
+  tl.to(
+    sectionTwoBg.value,
+    {
+      scale: 1.05,
+      ease: 'none',
+    },
+    '<',
+  )
+
+  // SECTION 3 ENTER
+  tl.to(sectionThree.value, {
+    opacity: 1,
+    ease: 'none',
+  })
+
+  tl.from(sectionThreeText.value, {
+    y: 80,
+    opacity: 0,
+    ease: 'none',
+  })
+
+  tl.fromTo(
+    sectionThreeBg.value,
+    { scale: 1.2, transformOrigin: '50% 50%' },
+    { scale: 1, ease: 'none' },
+  )
+
+  tl.from(
+    sectionThreeImage.value,
+    {
+      opacity: 0,
+      ease: 'none',
+    },
+    '<0.15',
+  )
+
+  // SECTION 3 EXIT
+  tl.to(sectionThreeText.value, {
+    y: -80,
+    opacity: 0,
+    ease: 'none',
+  })
+
+
+  tl.to(
+    sectionThreeBg.value,
+    {
+      scale: 1.05,
+      ease: 'none',
+    },
+    '<',
+  )
+
+  // SECTION 4 ENTER
+  tl.to(sectionFour.value, {
+    opacity: 1,
+    ease: 'none',
+  })
+
+  tl.from(sectionFourText.value, {
+    y: 80,
+    opacity: 0,
+    ease: 'none',
+  })
+
+  tl.fromTo(
+    sectionFourBg.value,
+    { scale: 1.2, transformOrigin: '50% 50%' },
+    { scale: 1, ease: 'none' },
+  )
+
+  tl.from(
+    sectionFourImage.value,
+    {
+      opacity: 0,
+      ease: 'none',
+    },
+    '<0.15',
+  )
+
 })
 </script>
 
 <template>
-  <div ref="projectsWrapper">
-    <div ref="sectionOne" class="relative overflow-hidden">
+  <div ref="projectsWrapper" class="relative h-screen">
+    <div ref="sectionOne" class="absolute inset-0 overflow-hidden">
       <img
         ref="sectionOneBg"
         :src="bgOne"
@@ -108,7 +242,7 @@ onMounted(() => {
       </div>
     </div>
 
-    <div ref="sectionTwo" class="relative overflow-hidden opacity-0">
+    <div ref="sectionTwo" class="absolute inset-0 overflow-hidden opacity-0">
       <img
         ref="sectionTwoBg"
         :src="bgTwo"
@@ -135,7 +269,7 @@ onMounted(() => {
       </div>
     </div>
 
-    <div ref="sectionThree" class="relative overflow-hidden opacity-0">
+    <div ref="sectionThree" class="absolute inset-0 overflow-hidden opacity-0">
       <img
         ref="sectionThreeBg"
         :src="bgThree"
@@ -161,7 +295,7 @@ onMounted(() => {
       </div>
     </div>
 
-    <div ref="sectionFour" class="relative overflow-hidden opacity-0">
+    <div ref="sectionFour" class="absolute inset-0 overflow-hidden opacity-0">
       <img
         ref="sectionFourBg"
         :src="bgFour"
