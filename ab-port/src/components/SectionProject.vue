@@ -39,12 +39,19 @@ const sectionFourText = ref(null)
 const sectionFourImage = ref(null)
 const sectionFourBg = ref(null)
 
+const prodFooter = ref(null)
+
+const currentIndex = ref(1)
+const totalProjects = 4
+
 onMounted(() => {
   console.log(sectionOne.value)
   console.log(sectionOneText.value)
   console.log(sectionOneImage.value)
 
   console.log(ScrollTrigger)
+
+  const sectionsCount = 4
 
   const tl = gsap.timeline({
     scrollTrigger: {
@@ -54,6 +61,11 @@ onMounted(() => {
       scrub: true,
       pin: true,
       markers: true, // TEMP – for sanity
+      onUpdate: (self) => {
+        const progress = self.progress
+        const index = Math.min(sectionsCount, Math.floor(progress * sectionsCount) + 1)
+        currentIndex.value = index
+      },
     },
   })
 
@@ -85,7 +97,6 @@ onMounted(() => {
     opacity: 0,
     ease: 'none',
   })
-
 
   tl.to(
     sectionOneBg.value,
@@ -130,7 +141,6 @@ onMounted(() => {
     ease: 'none',
   })
 
-
   tl.to(
     sectionTwoBg.value,
     {
@@ -174,7 +184,6 @@ onMounted(() => {
     ease: 'none',
   })
 
-
   tl.to(
     sectionThreeBg.value,
     {
@@ -210,7 +219,6 @@ onMounted(() => {
     },
     '<0.15',
   )
-
 })
 </script>
 
@@ -321,14 +329,14 @@ onMounted(() => {
       </div>
     </div>
 
-    <div>
+    <div ref="prodFooter" class="absolute bottom-8 left-0 w-full z-50 pointer-events-none">
       <div class="mx-auto max-w-[1200px] flex justify-between">
         <p>MY FEW PROJECTS</p>
         <div class="flex">
           <div>
-            <p>1</p>
+            <p>{{ currentIndex }}</p>
           </div>
-          <p>/ 5</p>
+          <p>/ {{ totalProjects }}</p>
         </div>
       </div>
     </div>
