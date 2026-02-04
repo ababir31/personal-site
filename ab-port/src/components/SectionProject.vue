@@ -6,10 +6,10 @@ import prodFour from '@/assets/images/prod-Four.png'
 
 import bgTab from '@/assets/images/bg-tab.png'
 
-import bgOne from '@/assets/images/bgone.jpg'
-import bgTwo from '@/assets/images/bgtwo.jpg'
-import bgThree from '@/assets/images/bgthree.jpg'
-import bgFour from '@/assets/images/bgFour.jpg'
+import bgOne from '@/assets/images/bgone.png'
+import bgTwo from '@/assets/images/bgtwo.png'
+import bgThree from '@/assets/images/bgthree.png'
+import bgFour from '@/assets/images/bgFour.png'
 
 import { onMounted, ref } from 'vue'
 import gsap from 'gsap'
@@ -60,7 +60,7 @@ onMounted(() => {
       end: '+=500%',
       scrub: true,
       pin: true,
-      markers: true, // TEMP – for sanity
+      markers: false, // TEMP – for sanity
       onUpdate: (self) => {
         const progress = self.progress
         const index = Math.min(sectionsCount, Math.floor(progress * sectionsCount) + 1)
@@ -232,7 +232,7 @@ onMounted(() => {
         alt=""
       />
       <div class="h-screen py-[124px] mx-auto max-w-[1200px] grid grid-cols-12 gap-6 items-center">
-        <div ref="sectionOneText" class="col-span-5">
+        <div ref="sectionOneText" class="col-span-5 txt-br-bg">
           <h2 class="text-[3rem] leading-12 mb-8 text-blue-600">Payment System Business</h2>
           <p class="text-slate-500">
             The main challenge was time. I designed the full website from the client’s brief while
@@ -258,7 +258,7 @@ onMounted(() => {
         alt=""
       />
       <div class="h-screen py-[124px] mx-auto max-w-[1200px] grid grid-cols-12 gap-6 items-center">
-        <div ref="sectionTwoText" class="col-span-5">
+        <div ref="sectionTwoText" class="col-span-5 txt-br-bg">
           <h2 class="text-[3rem] leading-12 mb-8 text-blue-600">Digital Agency Business</h2>
           <p class="text-slate-500">
             This wasn’t just a project. It was my full-time role for two years. I worked content
@@ -285,7 +285,7 @@ onMounted(() => {
         alt=""
       />
       <div class="h-screen py-[124px] mx-auto max-w-[1200px] grid grid-cols-12 gap-6 items-center">
-        <div ref="sectionThreeText" class="col-span-5">
+        <div ref="sectionThreeText" class="col-span-5 txt-br-bg">
           <h2 class="text-[3rem] leading-12 mb-8 text-blue-600">Tech News Reporting</h2>
           <p class="text-slate-500">
             Not just the UI. I build the whole brand from scratch, making it scream ‘tech’ without
@@ -311,7 +311,7 @@ onMounted(() => {
         alt=""
       />
       <div class="h-screen py-[124px] mx-auto max-w-[1200px] grid grid-cols-12 gap-6 items-center">
-        <div ref="sectionFourText" class="col-span-5">
+        <div ref="sectionFourText" class="col-span-5 txt-br-bg">
           <h2 class="text-[3rem] leading-12 mb-8 text-blue-600">Illustrations</h2>
           <p class="text-slate-500">
             This was a really fun project from one of my jobs. I got to bring characters to life
@@ -343,4 +343,11 @@ onMounted(() => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.txt-br-bg {
+  background: rgba(255, 255, 255, 0.24) ;
+  backdrop-filter: blur(3px) ;
+  padding: 1.2rem ;
+  border-radius: 1rem ;
+}
+</style>

@@ -6,18 +6,19 @@ import SectionAbout from '@/components/SectionAbout.vue'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import SectionProject from '@/components/SectionProject.vue'
+import SectionIdos from '@/components/SectionIdos.vue'
 </script>
 
 <template>
-
   <top-nav />
 
   <section-hero />
 
-  <section-about/>
+  <section-about />
 
-  <section-project/>
+  <section-project />
 
+  <section-idos />
 </template>
 
 <style></style>
