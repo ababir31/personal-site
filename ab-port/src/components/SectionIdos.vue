@@ -68,7 +68,7 @@ import amnimation3 from '@/assets/images/anima-3.gif'
     </div>
 
     <div
-      class="py-[48px] border-t bg-blue-50 border-b border-b-blue-200 border-t-blue-200 shadow-2xl shadow-slate-300 sticky bottom-0 z-10"
+      class="py-[48px] border-t bg-blue-50 border-b border-b-blue-200 border-t-blue-200 sticky bottom-0 z-10"
     >
       <div class="mx-auto max-w-[1200px] grid items-center grid-cols-12 gap-6">
         <div class="col-span-1">

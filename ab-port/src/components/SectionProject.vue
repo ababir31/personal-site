@@ -345,9 +345,9 @@ onMounted(() => {
 
 <style scoped>
 .txt-br-bg {
-  background: rgba(255, 255, 255, 0.24) ;
-  backdrop-filter: blur(3px) ;
-  padding: 1.2rem ;
-  border-radius: 1rem ;
+  background: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(3px);
+  padding: 1.2rem;
+  border-radius: 1rem;
 }
 </style>
