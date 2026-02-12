@@ -32,7 +32,7 @@ const iconMap = {
           <img :src="myImage" alt="" class="rounded-lg w-[180px] h-auto" />
           <p class="text-white text-[1.125rem]! leading-[1.6em]!">
             There is no template to audit a site or no magic formula make it successful. Every
-            project is different. That’s my process takes time but it works.
+            project is different. That’s why my process takes time but it works.
           </p>
         </div>
       </div>

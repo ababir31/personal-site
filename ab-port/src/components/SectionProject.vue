@@ -223,7 +223,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div ref="projectsWrapper" class="relative h-screen">
+  <div ref="projectsWrapper" class="relative h-screen" id="prod-sec">
     <div ref="sectionOne" class="absolute inset-0 overflow-hidden">
       <img
         ref="sectionOneBg"

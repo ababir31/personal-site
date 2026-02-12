@@ -1,8 +1,12 @@
 <script setup>
-const { buttontxt } = defineProps({
+const { buttontxt, href } = defineProps({
   buttontxt: {
     type: String,
     required: true,
+  },
+  href: {
+    type: String,
+    default: '#',
   },
 })
 </script>
@@ -13,7 +17,7 @@ const { buttontxt } = defineProps({
   >
     <a
       class="leading-none duration-300 ease-out group-hover:text-white relative px-8 py-4"
-      href="#"
+      :href="href"
     >
       {{ buttontxt }}
       <span class="absolute inset-0 -z-1 bg-slate-200 w-48 h-16"></span>

@@ -10,10 +10,11 @@ import amnimation3 from '@/assets/images/anima-3.gif'
       <h2 class="text-[3rem] leading-12 text-blue-500">What I Can Do</h2>
       <p>not a question ... (¬_¬ )</p>
     </div>
-    <div class="col-start-9 col-span-4">
-      <p>
-        I don’t just understand concepts. I bring hands-on industry experience, giving clear
-        direction and working smoothly with versatile teams.
+    <div class="col-start-9 col-span-5">
+      <p class="text-[0.875rem]! leading-5! text-slate-600">
+        I’ve learned a bunch of random software over the years, the kind you might recognize from a
+        course you took once. After a 12 years of experience (yes, I’m old), brands just start to
+        emerge from my brain, like magic. If you need still context, here's a fancy section below.
       </p>
     </div>
   </div>

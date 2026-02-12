@@ -47,7 +47,6 @@ onMounted(() => {
       start: 'top top',
       end: '+=100%',
       scrub: true,
-      pinSpacing: false,
       invalidateOnRefresh: true, // lets GSAP recalc automatically
     },
   })
@@ -65,15 +64,15 @@ onBeforeUnmount(() => {
     <div ref="hero" class="h-screen">
       <div class="h-full flex items-center justify-center">
         <div ref="imageWrap" class="image-wrap">
-          <img :src="meTwo" class="rounded-xl h-[32rem] w-auto" />
+          <img :src="meTwo" class="rounded-xl h-[32rem] w-auto grayscale-100" />
         </div>
       </div>
     </div>
     <div class="h-screen flex items-center align-middle justify-center">
       <div class="bg-white h-1/2 w-[1200px] p-12 rounded-2xl flex justify-between">
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col justify-between">
           <logo-abir />
-          <div ref="imageTarget" class="w-3xs h-[20rem]"></div>
+          <div ref="imageTarget" class="w-64 h-[20rem]"></div>
         </div>
         <div class="w-1/2 flex items-end flex-col justify-between">
           <p class="text-[1.722rem]! leading-1.5 text-slate-500">

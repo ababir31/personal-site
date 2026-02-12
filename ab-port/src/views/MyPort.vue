@@ -8,6 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import SectionProject from '@/components/SectionProject.vue'
 import SectionIdos from '@/components/SectionIdos.vue'
 import SectionFooter from '@/components/SectionFooter.vue'
+import SectionBlog from '@/components/SectionBlog.vue'
 </script>
 
 <template>
@@ -18,6 +19,8 @@ import SectionFooter from '@/components/SectionFooter.vue'
   <section-about />
 
   <section-project />
+
+  <section-blog/>
 
   <section-idos />
 

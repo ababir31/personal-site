@@ -1,6 +1,6 @@
 <script setup>
 import ButtonMain from '@/components/ButtonMain.vue'
-import HeroMarquee from "@/components/HeroMarquee.vue";
+import HeroMarquee from '@/components/HeroMarquee.vue'
 </script>
 
 <template>
@@ -14,8 +14,10 @@ import HeroMarquee from "@/components/HeroMarquee.vue";
     </div>
 
     <div class="col-span-6 relative">
-      <img  alt="" src="E:\FINAL-TRY\dev-portfolio\ab-port\src\assets\images\hero-img.png" />
-      <div class="absolute rounded-2xl inset-0 bg-gradient-to-t from-blue-50/80 from-1% to-blue-50/0 to-30% pointer-events-none"></div>
+      <img alt="" src="E:\FINAL-TRY\dev-portfolio\ab-port\src\assets\images\hero-img.png" />
+      <div
+        class="absolute rounded-2xl inset-0 bg-gradient-to-t from-blue-50/80 from-1% to-blue-50/0 to-30% pointer-events-none"
+      ></div>
     </div>
 
     <div class="col-span-3 min-h-[60vh]">
@@ -29,17 +31,16 @@ import HeroMarquee from "@/components/HeroMarquee.vue";
           <div class="text-[0.938rem] pb-8 leading-[1.6em] flex flex-col gap-y-2 text-slate-700">
             Projects handled<span class="text-[2.813rem] text-slate-500">240+</span>
           </div>
-          <button-main buttontxt="My Projects" />
+          <button-main buttontxt="My Projects" href="#prod-sec" />
         </div>
       </div>
     </div>
   </div>
 
   <div class="-mt-[10vh]">
-    <div class="h-[10vh] bg-blue-50/5 backdrop-blur-xs  flex items-end justify-center">
+    <div class="h-[10vh] bg-blue-50/5 backdrop-blur-xs flex items-end justify-center">
       <hero-marquee />
     </div>
-
   </div>
 </template>
 
