@@ -1,6 +1,7 @@
 <script setup>
 import ButtonMain from '@/components/ButtonMain.vue'
 import HeroMarquee from '@/components/HeroMarquee.vue'
+import HeroImage from '@/components/HeroImage.vue'
 </script>
 
 <template>
@@ -9,8 +10,8 @@ import HeroMarquee from '@/components/HeroMarquee.vue'
   >
     <!-- Left Text -->
     <div class="md:col-span-3 z-10 md:pl-12 md:pb-64 text-center md:text-left">
-      <h1 class="text-blue-600 text-2xl md:text-3xl">Brand Builder</h1>
-      <p class="text-slate-600 max-w-sm mx-auto md:mx-0 mt-2">
+      <h1 class="text-blue-600 text-3xl! md:text-[2.5rem]! lg:text-[7.438rem]! leading-[1em]!">Brand Builder</h1>
+      <p class="text-slate-600 max-w-sm mx-auto md:mx-0 mt-2 text-sm! md:text-base!">
         I don’t dream ideas. I build them. From zero. With experience, skill, and coffee. A lot of
         coffee ...
       </p>
@@ -18,11 +19,12 @@ import HeroMarquee from '@/components/HeroMarquee.vue'
 
     <!-- Center Image -->
     <div class="md:col-span-6 relative flex justify-center">
-      <img
-        alt=""
-        class="w-full max-w-md md:max-w-full object-cover"
-        src="E:\FINAL-TRY\dev-portfolio\ab-port\src\assets\images\hero-img.png"
-      />
+      <!--      <img-->
+      <!--        alt=""-->
+      <!--        class="w-full max-w-md md:max-w-full object-cover"-->
+      <!--        src="E:\FINAL-TRY\dev-portfolio\ab-port\src\assets\images\hero-img.png"-->
+      <!--      />-->
+      <hero-image class="w-full max-w-md md:max-w-full object-cover rounded-4xl" />
       <div
         class="absolute rounded-2xl inset-0 bg-gradient-to-t from-blue-50/80 from-1% to-blue-50/0 to-30% pointer-events-none"
       ></div>
@@ -53,7 +55,5 @@ import HeroMarquee from '@/components/HeroMarquee.vue'
     </div>
   </div>
 </template>
-
-
 
 <style scoped></style>

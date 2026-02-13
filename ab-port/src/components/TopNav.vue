@@ -17,21 +17,32 @@ import IconInstagram from '@/components/icons/IconInstagram.vue'
 
     <!-- Social Icons -->
     <div class="grid grid-cols-4 sm:grid-cols-1 gap-2">
-      <a href="#" class="bg-white p-3 rounded-md shadow-md flex items-center justify-center w-12">
+      <a
+        href="https://www.linkedin.com/in/ababir1/" target="_blank"
+        class="bg-white p-3 rounded-md shadow-md flex items-center justify-center w-12"
+      >
         <icon-linkedin class="fill-slate-500" />
       </a>
-      <a href="#" class="bg-white p-3 rounded-md shadow-md flex items-center justify-center w-12">
+      <a
+        href="https://github.com/ababir31/" target="_blank"
+        class="bg-white p-3 rounded-md shadow-md flex items-center justify-center w-12"
+      >
         <icon-github class="fill-slate-500" />
       </a>
-      <a href="#" class="bg-white p-3 rounded-md shadow-md flex items-center justify-center w-12">
+      <a
+        href="https://www.youtube.com/@DesignThinking-Abir" target="_blank"
+        class="bg-white p-3 rounded-md shadow-md flex items-center justify-center w-12"
+      >
         <icon-youtube class="fill-slate-500" />
       </a>
-      <a href="#" class="bg-white p-3 rounded-md shadow-md flex items-center justify-center w-12">
+      <a
+        href="https://www.instagram.com/ab.abir/" target="_blank"
+        class="bg-white p-3 rounded-md shadow-md flex items-center justify-center w-12"
+      >
         <icon-instagram class="fill-slate-500" />
       </a>
     </div>
   </div>
 </template>
-
 
 <style scoped></style>
