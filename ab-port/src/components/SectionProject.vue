@@ -223,7 +223,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div ref="projectsWrapper" class="relative h-screen" id="prod-sec">
+  <div ref="projectsWrapper" class="relative min-h-screen" id="prod-sec">
+    <!-- Section One -->
     <div ref="sectionOne" class="absolute inset-0 overflow-hidden">
       <img
         ref="sectionOneBg"
@@ -231,25 +232,33 @@ onMounted(() => {
         class="absolute inset-0 w-full h-full object-cover z-0"
         alt=""
       />
-      <div class="h-screen py-[124px] mx-auto max-w-[1200px] grid grid-cols-12 gap-6 items-center">
-        <div ref="sectionOneText" class="col-span-5 txt-br-bg">
-          <h2 class="text-[3rem] leading-12 mb-8 text-blue-600">Payment System Business</h2>
-          <p class="text-slate-500">
+      <div
+        class="min-h-screen py-16 md:py-24 mx-auto max-w-[1200px] grid grid-cols-1 md:grid-cols-12 gap-8 items-center px-4"
+      >
+        <div ref="sectionOneText" class="md:col-span-5 txt-br-bg text-center md:text-left">
+          <h2 class="text-3xl sm:text-3xl md:text-[3rem] leading-tight mb-6 text-blue-600">
+            Payment System Business
+          </h2>
+          <p class="text-slate-500 text-sm sm:text-base md:text-lg">
             The main challenge was time. I designed the full website from the client’s brief while
             coordinating with developers and the client to get it right on the first try.
           </p>
         </div>
-        <div ref="sectionOneImage" class="col-start-7 col-span-6 relative">
-          <img :src="bgTab" alt="" class="w-full h-auto relative z-10" />
+        <div
+          ref="sectionOneImage"
+          class="md:col-start-7 md:col-span-6 relative flex justify-center"
+        >
+          <img :src="bgTab" alt="" class="w-full max-w-md md:max-w-full h-auto relative z-10" />
           <img
             :src="prodOne"
             alt=""
-            class="absolute inset-x-0 bottom-0 mx-auto w-auto z-0 rounded-3xl drop-shadow-2xl drop-shadow-neutral-500"
+            class="absolute inset-x-0 bottom-0 w-112 md:w-auto z-0 rounded-3xl drop-shadow-2xl drop-shadow-neutral-500"
           />
         </div>
       </div>
     </div>
 
+    <!-- Section Two -->
     <div ref="sectionTwo" class="absolute inset-0 overflow-hidden opacity-0">
       <img
         ref="sectionTwoBg"
@@ -257,26 +266,34 @@ onMounted(() => {
         class="absolute inset-0 w-full h-full object-cover z-0"
         alt=""
       />
-      <div class="h-screen py-[124px] mx-auto max-w-[1200px] grid grid-cols-12 gap-6 items-center">
-        <div ref="sectionTwoText" class="col-span-5 txt-br-bg">
-          <h2 class="text-[3rem] leading-12 mb-8 text-blue-600">Digital Agency Business</h2>
-          <p class="text-slate-500">
+      <div
+        class="min-h-screen py-16 md:py-24 mx-auto max-w-[1200px] grid grid-cols-1 md:grid-cols-12 gap-8 items-center px-4"
+      >
+        <div ref="sectionTwoText" class="md:col-span-5 txt-br-bg text-center md:text-left">
+          <h2 class="text-3xl sm:text-3xl md:text-[3rem] leading-tight mb-6 text-blue-600">
+            Digital Agency Business
+          </h2>
+          <p class="text-slate-500 text-sm sm:text-base md:text-lg">
             This wasn’t just a project. It was my full-time role for two years. I worked content
             writing, video production, and design, and I also helped shape the rebranding and
             website for this brand.
           </p>
         </div>
-        <div ref="sectionTwoImage" class="col-start-7 col-span-6 relative">
-          <img :src="bgTab" alt="" class="w-full h-auto relative z-10" />
+        <div
+          ref="sectionTwoImage"
+          class="md:col-start-7 md:col-span-6 relative flex justify-center"
+        >
+          <img :src="bgTab" alt="" class="w-full max-w-md md:max-w-full h-auto relative z-10" />
           <img
             :src="prodThree"
             alt=""
-            class="absolute inset-x-0 bottom-0 mx-auto w-auto z-0 rounded-3xl drop-shadow-2xl drop-shadow-neutral-500"
+            class="absolute inset-x-0 bottom-0 w-112 w-3/4 md:w-auto z-0 rounded-3xl drop-shadow-2xl drop-shadow-neutral-500"
           />
         </div>
       </div>
     </div>
 
+    <!-- Section Three -->
     <div ref="sectionThree" class="absolute inset-0 overflow-hidden opacity-0">
       <img
         ref="sectionThreeBg"
@@ -284,25 +301,33 @@ onMounted(() => {
         class="absolute inset-0 w-full h-full object-cover z-0"
         alt=""
       />
-      <div class="h-screen py-[124px] mx-auto max-w-[1200px] grid grid-cols-12 gap-6 items-center">
-        <div ref="sectionThreeText" class="col-span-5 txt-br-bg">
-          <h2 class="text-[3rem] leading-12 mb-8 text-blue-600">Tech News Reporting</h2>
-          <p class="text-slate-500">
+      <div
+        class="min-h-screen py-16 md:py-24 mx-auto max-w-[1200px] grid grid-cols-1 md:grid-cols-12 gap-8 items-center px-4"
+      >
+        <div ref="sectionThreeText" class="md:col-span-5 txt-br-bg text-center md:text-left">
+          <h2 class="text-3xl sm:text-3xl md:text-[3rem] leading-tight mb-6 text-blue-600">
+            Tech News Reporting
+          </h2>
+          <p class="text-slate-500 text-sm sm:text-base md:text-lg">
             Not just the UI. I build the whole brand from scratch, making it scream ‘tech’ without
             scaring anyone off. And to make it easy I developed it using WordPress & Elementor.
           </p>
         </div>
-        <div ref="sectionThreeImage" class="col-start-7 col-span-6 relative">
-          <img :src="bgTab" alt="" class="w-full h-auto relative z-10" />
+        <div
+          ref="sectionThreeImage"
+          class="md:col-start-7 md:col-span-6 relative flex justify-center"
+        >
+          <img :src="bgTab" alt="" class="w-full max-w-md md:max-w-full h-auto relative z-10" />
           <img
             :src="prodTwo"
             alt=""
-            class="absolute inset-x-0 bottom-0 mx-auto w-auto z-0 rounded-3xl drop-shadow-2xl drop-shadow-neutral-500"
+            class="absolute inset-x-0 bottom-0 w-112 w-3/4 md:w-auto z-0 rounded-3xl drop-shadow-2xl drop-shadow-neutral-500"
           />
         </div>
       </div>
     </div>
 
+    <!-- Section Four -->
     <div ref="sectionFour" class="absolute inset-0 overflow-hidden opacity-0">
       <img
         ref="sectionFourBg"
@@ -310,32 +335,43 @@ onMounted(() => {
         class="absolute inset-0 w-full h-full object-cover z-0"
         alt=""
       />
-      <div class="h-screen py-[124px] mx-auto max-w-[1200px] grid grid-cols-12 gap-6 items-center">
-        <div ref="sectionFourText" class="col-span-5 txt-br-bg">
-          <h2 class="text-[3rem] leading-12 mb-8 text-blue-600">Illustrations</h2>
-          <p class="text-slate-500">
+      <div
+        class="min-h-screen py-16 md:py-24 mx-auto max-w-[1200px] grid grid-cols-1 md:grid-cols-12 gap-8 items-center px-4"
+      >
+        <div ref="sectionFourText" class="md:col-span-5 txt-br-bg text-center md:text-left">
+          <h2 class="text-3xl sm:text-3xl md:text-[3rem] leading-tight mb-6 text-blue-600">
+            Illustrations
+          </h2>
+          <p class="text-slate-500 text-sm sm:text-base md:text-lg">
             This was a really fun project from one of my jobs. I got to bring characters to life
             from just brief descriptions, working closely with a remote team throughout the process.
           </p>
         </div>
-        <div ref="sectionFourImage" class="col-start-7 col-span-6 relative">
-          <img :src="bgTab" alt="" class="w-full h-auto relative z-10" />
+        <div
+          ref="sectionFourImage"
+          class="md:col-start-7 md:col-span-6 relative flex justify-center"
+        >
+          <img :src="bgTab" alt="" class="w-full max-w-md md:max-w-full h-auto relative z-10" />
           <img
             :src="prodFour"
             alt=""
-            class="absolute inset-x-0 bottom-0 mx-auto w-auto z-0 rounded-3xl drop-shadow-2xl drop-shadow-neutral-500"
+            class="absolute inset-x-0 bottom-0 w-112 w-3/4 md:w-auto z-0 rounded-3xl drop-shadow-2xl drop-shadow-neutral-500"
           />
         </div>
       </div>
     </div>
 
-    <div ref="prodFooter" class="absolute bottom-8 left-0 w-full z-50 pointer-events-none">
-      <div class="mx-auto max-w-[1200px] flex justify-between">
-        <p>MY FEW PROJECTS</p>
-        <div class="flex">
-          <div>
-            <p>{{ currentIndex }}</p>
-          </div>
+    <!-- Footer -->
+    <div
+      ref="prodFooter"
+      class="absolute bottom-4 md:bottom-8 left-0 w-full z-50 pointer-events-none"
+    >
+      <div
+        class="mx-auto max-w-[1200px] flex md:flex-row justify-between items-center gap-2 px-4"
+      >
+        <p class="text-sm sm:text-base">MY FEW PROJECTS</p>
+        <div class="flex gap-1 text-sm sm:text-base">
+          <p>{{ currentIndex }}</p>
           <p>/ {{ totalProjects }}</p>
         </div>
       </div>

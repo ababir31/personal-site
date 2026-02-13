@@ -3,8 +3,7 @@ import SectionHero from '@/components/SectionHero.vue'
 import TopNav from '@/components/TopNav.vue'
 import SectionAbout from '@/components/SectionAbout.vue'
 
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 import SectionProject from '@/components/SectionProject.vue'
 import SectionIdos from '@/components/SectionIdos.vue'
 import SectionFooter from '@/components/SectionFooter.vue'

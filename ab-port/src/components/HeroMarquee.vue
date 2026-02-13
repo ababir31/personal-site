@@ -43,7 +43,7 @@ const skillArray = [
     gradient-length="10%"
     duration="90"
     :loop="0"
-    class="text-slate-800 fill-blue-50 drop-shadow-xs drop-shadow-blue-50/50 mb-4 mx-32 max-w-[1200px]"
+    class="text-slate-800 fill-blue-50 drop-shadow-xs drop-shadow-blue-50/50 mb-4 mx-12 md:mx-32 max-w-[1200px]"
   >
     <span v-for="(word, index) in skillArray" :key="index">
       {{ word }}

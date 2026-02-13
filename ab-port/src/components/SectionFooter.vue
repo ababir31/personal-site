@@ -61,36 +61,48 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="bg-blue-500">
-    <div ref="hero" class="h-screen">
-      <div class="h-full flex items-center justify-center">
-        <div ref="imageWrap" class="image-wrap">
-          <img :src="meTwo" class="rounded-xl h-[32rem] w-auto grayscale-100" />
-        </div>
+    <!-- Hero -->
+    <div ref="hero" class="min-h-screen flex items-center justify-center px-4">
+      <div ref="imageWrap" class="image-wrap">
+        <img
+          :src="meTwo"
+          class="rounded-xl w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg grayscale"
+        />
       </div>
     </div>
-    <div class="h-screen flex items-center align-middle justify-center">
-      <div class="bg-white h-1/2 w-[1200px] p-12 rounded-2xl flex justify-between">
-        <div class="flex flex-col justify-between">
+
+    <!-- Contact Section -->
+    <div class="min-h-screen flex items-center justify-center px-4">
+      <div
+        class="bg-white w-full max-w-[1200px] p-6 sm:p-8 md:p-12 rounded-2xl flex flex-col md:flex-row justify-between gap-8"
+      >
+        <!-- Left Column -->
+        <div class="flex flex-col justify-between items-center md:items-start gap-6">
           <logo-abir />
-          <div ref="imageTarget" class="w-64 h-[20rem]"></div>
+          <div ref="imageTarget" class="w-32 sm:w-48 md:w-64 h-40 sm:h-48 md:h-[20rem]"></div>
         </div>
-        <div class="w-1/2 flex items-end flex-col justify-between">
-          <p class="text-[1.722rem]! leading-1.5 text-slate-500">
+
+        <!-- Right Column -->
+        <div class="w-full md:w-1/2 flex flex-col justify-between gap-6 text-center md:text-right items-center md:items-end">
+          <p
+            class="text-base! sm:text-lg! md:text-xl! lg:text-[1.722rem]! text-slate-500 leading-relaxed"
+          >
             So, this is me. If you wanna talk,
             <a
-              class="text-[1.722rem]! leading-1.5 text-blue-600"
+              class="text-base! sm:text-lg! md:text-xl! lg:text-[1.722rem]! text-blue-600"
               href="mailto:metaformico@gmail.com?subject=Let's%20Talk%20business%20mate!"
               >Click Here</a
             >. I’ll chat over email, just like the old times. If you just wanna stalk me, go ahead
             and explore my socials.
           </p>
-          <div class="bg-blue-500 p-2 flex gap-2 justify-between rounded-xl">
+
+          <!-- Socials -->
+          <div
+            class="bg-blue-500 p-2 flex gap-2 justify-center md:justify-end rounded-xl flex-wrap"
+          >
             <Facebook />
-
             <instagram />
-
             <x />
-
             <Linkedin />
           </div>
         </div>
@@ -98,6 +110,7 @@ onBeforeUnmount(() => {
     </div>
   </div>
 </template>
+
 
 <style scoped>
 .image-wrap {
