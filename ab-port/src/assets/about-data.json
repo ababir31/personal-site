@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "icon": "IconMarket",
+    "title": "Market Placement",
+    "description": "Conduct competitor analysis and market research to position product where it stands out and connects with the right audience."
+  },
+  {
+    "id": 2,
+    "icon": "IconBrand",
+    "title": "Brand Design",
+    "description": "Design more than a logo, create a full brand impression, from visual identity to the emotional experience your audience feels."
+  },
+  {
+    "id": 3,
+    "icon": "IconOnline",
+    "title": "Online Presence",
+    "description": "Build conversion-focused websites and optimize social media profiles to create a consistent, high-impact online footprint."
+  },
+  {
+    "id": 4,
+    "icon": "IconOrganic",
+    "title": "Organic Strategy",
+    "description": "Use technical SEO, content marketing, and repurposing strategies to drive sustainable, long-term growth."
+  }
+]

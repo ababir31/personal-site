@@ -25,7 +25,7 @@ const handleMouseMove = (e) => {
 
     <!-- The top image with the radial mask applied -->
     <div
-      class="top-layer"
+      class="top-layer grayscale-50"
       :style="{
         backgroundImage: `url(${me2})`,
         // Soft transition from 0% to 100%

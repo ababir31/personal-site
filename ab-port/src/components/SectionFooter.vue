@@ -97,14 +97,16 @@ onBeforeUnmount(() => {
           </p>
 
           <!-- Socials -->
-          <div
-            class="bg-blue-500 p-2 flex gap-2 justify-center md:justify-end rounded-xl flex-wrap"
-          >
-            <Facebook />
-            <instagram />
-            <x />
-            <Linkedin />
-          </div>
+          <div>
+            <div
+              class="bg-blue-500 p-2 flex gap-2 justify-center md:justify-end rounded-xl flex-wrap"
+            >
+              <Facebook />
+              <instagram />
+              <x />
+              <Linkedin />
+            </div>
+            <p class="text-xs! mt-3 ">UI designed and developed by me ©️ rights are reserved.</p></div>
         </div>
       </div>
     </div>
